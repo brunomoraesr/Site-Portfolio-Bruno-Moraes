@@ -7,7 +7,6 @@
   font-style: normal;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -112,7 +111,7 @@ h1 {
 }
 
 .sobre-titulo {
-  padding:2rem;
+  padding: 2rem;
   font-size: 3rem;
   color: var(--claro);
   text-align: center;
@@ -187,6 +186,7 @@ h1 {
 
 .info-portfolio {
   margin-bottom: 5px;
+  color: var(--claro);
 }
 
 .contatos {
@@ -341,7 +341,6 @@ h1 {
   }
 }
 
-
 @media (max-width: 768px) {
   .contatos {
     padding: 4rem 1rem;
@@ -367,7 +366,7 @@ h1 {
   }
 
   .campo-form {
-    padding: 0.8rem; 
+    padding: 0.8rem;
   }
 }
 .competencias {
