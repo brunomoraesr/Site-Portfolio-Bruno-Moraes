@@ -1,245 +1,362 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 :root {
-    --primaria: #4f46e5;
-    --secundaria: #7c3aed;
-    --escuro: #0f172a;
-    --maisEscuro: #0a0f1c;
-    --claro: #e2e8f0;
-    --vidro: rgba(255, 255, 255, 0.1);
+  --primaria: #4f46e5;
+  --secundaria: #7c3aed;
+  --escuro: #0f172a;
+  --maisEscuro: #0a0f1c;
+  --claro: #e2e8f0;
+  --vidro: rgba(255, 255, 255, 0.1);
 }
 
 body {
-    background-color: var(--escuro);
-    color: var(--claro);
+  background-color: var(--escuro);
+  color: var(--claro);
 }
 
 .navegacao {
-    position: fixed;
-    top: 0;
-    background: rgba(15, 23, 42, 0.8);
-    width: 100%;
-    z-index: 100;
-    padding: 1.2rem;
-
+  position: fixed;
+  top: 0;
+  background: rgba(15, 23, 42, 0.8);
+  width: 100%;
+  z-index: 100;
+  padding: 1.2rem;
 }
 
 .menu {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 3rem;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 3rem;
 }
 
 .menu-link {
-    text-decoration: none;
-    color: var(--claro);
-    font-weight: 500;
-    position: relative;
-    padding-inline: 0.5rem 0;
+  text-decoration: none;
+  color: var(--claro);
+  font-weight: 500;
+  position: relative;
+  padding-inline: 0.5rem 0;
 }
 
 .menu-link::after {
-    content: ' ';
-    height: 2px;
-    width: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
-    transition: width 0.5s ease;
-
+  content: " ";
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+  transition: width 0.5s ease;
 }
 
 .menu-link:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .cabecalho {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 0;
-    /* Ajuste conforme necessário */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 0;
+  /* Ajuste conforme necessário */
 }
 
 .cabecalho-subtitulo {
-    text-align: center;
+  text-align: center;
 }
 
 .foto-perfil {
-    width: 350px;
-    height: 350px;
-    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
-    border-radius: 50%;
-    border: 4px solid var(--vidro);
-    text-align: center;
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+  border-radius: 50%;
+  border: 4px solid var(--vidro);
+  text-align: center;
 }
 
 h1 {
-    font-size: 3.5rem;
-    color: var(--primaria);
-    font-weight: bold;
-    margin: 20px;
-    text-align: center;
+  font-size: 3.5rem;
+  color: var(--primaria);
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
 }
 
 .cabecalho-subtitulo {
-    font-size: 1.5rem;
-    color: var(--claro);
+  font-size: 1.5rem;
+  color: var(--claro);
 }
 
 .sobre {
-    padding: 4rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .sobre-titulo {
-    font-size: 3rem;
-    color: var(--claro);
-    text-align: center;
+  font-size: 3rem;
+  color: var(--claro);
+  text-align: center;
 }
 
 .sobre-caixa {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 16px;
-    border: 1px solid var(--vidro);
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 1px solid var(--vidro);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .sobre-mim {
-    text-align: center;
-    font-size: 1.2rem;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .portfolio {
-    padding: 6rem 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* centraliza conteúdos filhos no eixo horizontal */
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* centraliza conteúdos filhos no eixo horizontal */
 }
 
 .portfolio-titulos {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 25px;
-
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
 }
 
 .portfolio-card:hover {
-    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
-    transform: translateY(-10px)scale(1.03);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+  transform: translateY(-10px) scale(1.03);
 }
 
 .portfolio-caixa {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .portfolio-card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    backdrop-filter: blur(5px);
-    border: 1px solid var(--vidro);
-    overflow: hidden;
-    transition: all 0.5s ease;
-    cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--vidro);
+  overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .portfolio-imagem {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .caixa-textos-projeto {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .paragrafo-portfolio {
-    color: rgba(226, 232, 240, 0.8);
-    line-height: 1.25rem;
-
+  color: rgba(226, 232, 240, 0.8);
+  line-height: 1.25rem;
 }
 
 .info-portfolio {
-    margin-bottom: 5px;
-
+  margin-bottom: 5px;
 }
 
 .contatos {
-    padding: 6rem 2rem;
-
+  padding: 6rem 2rem;
 }
 
 .contatos-titulo {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 25px;
-
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
 }
 
 .formulario-contato {
-    max-width: 600px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
-    padding: 2rem;
-    border: 1px solid var(--vidro);
-    border-radius: 16px;
-
-
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border: 1px solid var(--vidro);
+  border-radius: 16px;
 }
 
 .campo-form {
-    width: 100%;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    color: var(--claro);
-    border: 1px var(--vidro);
-    outline: none;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: var(--claro);
+  border: 1px var(--vidro);
+  outline: none;
+  resize: none;
 }
-.campo-form:focus{
-    border-color:var(--secundaria);
-    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+.campo-form:focus {
+  border-color: var(--secundaria);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
 }
 
 .grupo-form {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.botao-form {
+  color: var(--claro);
+  background: linear-gradient(45deg, var(--secundaria), var(--primaria));
+  padding: 1rem 2rem; /* Corrected: space instead of comma */
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.botao-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+}
 
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .navegacao {
+    padding: 0.8rem;
+  }
 }
-.botao-form{
-    color:var(--claro);
-    background:linear-gradient(45deg , var(--secundaria),var(--primaria));
-    padding: 1rem,2rem;
-    border:none;
-    border-radius:16px;
-    cursor:pointer;
-    font-weight: bold;
-    width: 100%;
-    transition:all 0.5s ease;
+
+@media (max-width: 480px) {
+  .menu-link {
+    font-size: 0.9rem;
+  }
 }
-.botao-form:hover{
-    transform:translateY(-4px);
-    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+
+@media (max-width: 768px) {
+  .foto-perfil {
+    width: 250px;
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .cabecalho-subtitulo {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .foto-perfil {
+    width: 200px;
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 15px;
+  }
+
+  .cabecalho-subtitulo {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre {
+    padding: 3rem 1rem;
+  }
+
+  .sobre-titulo {
+    font-size: 2.5rem;
+  }
+
+  .sobre-caixa {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .sobre-mim {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre-titulo {
+    font-size: 2rem;
+  }
+
+  .sobre-caixa {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 4rem 1rem;
+  }
+
+  .portfolio-titulos {
+    font-size: 2rem;
+  }
+
+  .portfolio-caixa {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-titulos {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contatos {
+    padding: 4rem 1rem;
+  }
+
+  .contatos-titulo {
+    font-size: 2rem;
+  }
+
+  .formulario-contato {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .grupo-form {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contatos-titulo {
+    font-size: 1.8rem;
+  }
+
+  .campo-form {
+    padding: 0.8rem;
+  }
 }
