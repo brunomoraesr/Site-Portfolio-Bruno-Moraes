@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <title>Bruno Moraes|Portfolio</title>
 </head>
 
@@ -21,63 +24,60 @@
                 <a href="#portfolio" class="menu-link">Portfolio </a>
             </li>
             <li>
-                <a href="#contato" class="menu-link">Contato </a>
+                <a href="#contatos" class="menu-link">Contato </a>
             </li>
 
         </ul>
     </nav>
-    <main id="inicio" class="cabecalho">
-        <div>
-            <img src="./img/bruno.png" alt="Foto de Bruno Moraes" class="foto-perfil">
-            <h1>Bruno Moraes</h1>
-            <p class="cabecalho-subtitulo">Engenheiro de Software</p>
-        </div>
+  <main id="inicio" class="cabecalho">
+  <div class="cabecalho-conteudo">
+    <img src="./img/bruno.png" alt="Foto de Bruno Moraes" class="foto-perfil">
+    <h1>Bruno Moraes</h1>
+    <p class="cabecalho-subtitulo">Engenheiro de Software</p>
+  </div>
+</main>
 
     </main>
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre mim</h2>
         <div class="sobre-caixa">
-            <p class="sobre-mim">Olá ! Sou engenheiro de software formado na faculdade ICEV. Tenho experiência na
-                criação de sites e softwares , além de ter experiência em gerencia de redes.</p>
+            <p class="sobre-mim">Olá ! Sou engenheiro de software em formação na faculdade ICEV. Tenho experiência na
+                criação de sites Web e de SharePoint, além de ter experiência em gerencia de redes e desenvolvimento de softwares em linguagens de programação como Java e Python.</p>
         </div>
+        <section class="competencias" id="competencias">
+  <h2 class="competencias-titulo">Competências</h2>
+  <div class="competencias-logos">
+    <img src="./img/icons/html.png" alt="HTML5" class="logo-tec">
+    <img src="./img/icons/java.png" alt="CSS3" class="logo-tec">
+    <img src="./img/icons/python.png" alt="JavaScript" class="logo-tec">
+    <img src="./img/icons/js.png" alt="React" class="logo-tec">
+  </div>
+</section>
+
     </section>
     <section id="portfolio" class="portfolio">
         <h2 class="portfolio-titulos">Meu portfolio</h2>
-        <div class="portfolio-caixa">
-            <div class="portfolio-card">
-                <img src="/img/lixo.png" alt="portfolio 1" class="portfolio-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-portfolio">Simulador de Coleta de Lixo</h3>
-                    <p class="paragrafo-portfolio">Simulador de Coleta de Lixo em Java com paramêtros configuráveis</p>
-                </div>
+        <div class="portfolio-caixa" id="portfolio-repositorios">
             </div>
-            <div class="portfolio-card">
-                <img src="/img/lixo.png" alt="portfolio 1" class="portfolio-imagem">
-                <div class="caixa-textos-projeto">
-                <h3 class="info-portfolio">Simulador de Coleta de Lixo</h3>
-                <p class="paragrafo-portfolio">Simulador de Coleta de Lixo em Java com paramêtros configuráveis</p>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <img src="/img/lixo.png" alt="portfolio 1" class="portfolio-imagem">
-            <div class="caixa-textos-projeto">
-            <h3 class="info-portfolio">Simulador de Coleta de Lixo</h3>
-            <p class="paragrafo-portfolio">Simulador de Coleta de Lixo em Java com paramêtros configuráveis</p>
-            </div>
-        </div>
-        </div>
     </section>
     <section id="contatos" class="contatos">
         <h2 class="contatos-titulo">Entre em contato<h2>
                 <form class="formulario-contato" id="formulario">
                     <div class="grupo-form">
-                        <input placeholder="Nome" class="campo-form">
+                        <input placeholder="Nome" class="campo-form" name="nome">
                     </div>
                     <div class="grupo-form">
-                        <textarea class="campo-form" placeholder="Digite sua mensagem"></textarea>
+                        <textarea class="campo-form" placeholder="Digite sua mensagem" name="mensagem"></textarea>
                     </div>
                     <button type="submit" class="botao-form">Enviar WhatsApp</button>
+                </form>
     </section>
+    <script src="script.js"></script>
+    <footer class="rodape">
+  <p class="rodape-info">📧 Email: <a href="mailto:brunomoraessribeiro@email.com">brunomoraessribeiro@gmail.com</a></p>
+  <p class="rodape-info">📞 Telefone: <a href="tel:+5586994822841">+55 (86) 994822841</a></p>
+</footer>
+
 </body>
 
 </html>
